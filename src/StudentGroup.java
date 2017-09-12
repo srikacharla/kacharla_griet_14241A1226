@@ -241,6 +241,19 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void bubbleSort() {
 		// Add your implementation here
+		Student s1;
+		Student[] s = new Student[this.students.length];
+		 for(int i=0; i < this.students.length-1; i++){  
+             for(int j=1; j < this.students.length; j++){  
+                      if(this.students[i].getAvgMark() > this.students[j].getAvgMark()){  
+                             //swap elements  
+                             s1 = this.students[j-1];  
+                             this.students[j-1] = this.students[j];  
+                             this.students[j] = s1;  
+                     }  
+                      
+             }  
+		
 	}
 
 	@Override
