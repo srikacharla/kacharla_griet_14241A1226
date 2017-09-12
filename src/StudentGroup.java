@@ -252,7 +252,8 @@ public class StudentGroup implements StudentArrayOperation {
                              this.students[j] = s1;  
                      }  
                       
-             }  
+             }
+		 }
 		
 	}
 
